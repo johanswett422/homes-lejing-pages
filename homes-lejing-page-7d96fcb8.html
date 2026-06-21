@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐竞体育 · 信息索引与日常参考</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f9fafb;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.75;
+      padding: 2.5rem 1rem;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.02), 0 1px 4px rgba(0,0,0,0.04);
+      padding: 2.5rem 2rem 3.5rem;
+    }
+    @media (max-width: 480px) {
+      .page {
+        padding: 1.75rem 1.25rem 2.5rem;
+      }
+    }
+
+    /* Hero */
+    .hero {
+      margin-bottom: 2.8rem;
+      text-align: left;
+    }
+    .hero-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: #0f172a;
+    }
+    .hero h1 span {
+      color: #2563eb;
+    }
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.05rem;
+      color: #475569;
+      max-width: 600px;
+    }
+
+    /* 通用标题 */
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 2.2rem 0 1rem 0;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 1.6rem 0 0.6rem 0;
+      color: #1e293b;
+    }
+
+    /* 段落及列表 */
+    p {
+      margin-bottom: 1rem;
+      color: #334155;
+    }
+    .intro-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.2rem 0;
+    }
+    .intro-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.55rem;
+      color: #334155;
+    }
+    .intro-list li::before {
+      content: "·";
+      position: absolute;
+      left: 0.2rem;
+      color: #2563eb;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    /* 优势卡片区 (干净留白) */
+    .advantages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1.6rem 0 1rem;
+    }
+    .advantage-item {
+      flex: 1 1 180px;
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 1.2rem 1rem;
+      transition: background 0.15s;
+    }
+    .advantage-item strong {
+      display: block;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #0f172a;
+      margin-bottom: 0.3rem;
+    }
+    .advantage-item span {
+      font-size: 0.9rem;
+      color: #475569;
+    }
+
+    /* 说明区 (对照延伸) */
+    .extend-note {
+      background: #f1f5f9;
+      border-radius: 16px;
+      padding: 1.5rem 1.6rem;
+      margin: 1.8rem 0;
+    }
+    .extend-note p {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    /* FAQ 摘要 (极简) */
+    .faq-summary {
+      margin: 2rem 0 1.5rem;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e9edf2;
+      padding: 0.8rem 0;
+    }
+    .faq-question {
+      font-weight: 500;
+      color: #0f172a;
+      margin-bottom: 0.2rem;
+    }
+    .faq-answer {
+      color: #475569;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* 底部 */
+    .footer-links {
+      margin-top: 2.8rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e9edf2;
+      font-size: 0.9rem;
+      color: #64748b;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.6rem;
+    }
+    .footer-links a {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.1s;
+    }
+    .footer-links a:hover {
+      border-bottom-color: #2563eb;
+    }
+
+    .inline-link {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(37, 99, 235, 0.2);
+      transition: border-color 0.1s;
+    }
+    .inline-link:hover {
+      border-bottom-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- hero -->
+  <div class="hero">
+    <div class="hero-label">信息参考 · 日常查询</div>
+    <h1>关于 <span>乐竞体育</span> 的<br>事实与延伸阅读</h1>
+    <p>当我们需要快速核验一个平台的基本信息、对照不同来源的描述，或是从日常使用中梳理出更清晰的认知时，客观的索引页面会是不错的起点。以下内容围绕“乐竞体育”展开，提供一份结构化的参考材料。</p>
+  </div>
+
+  <!-- 对照区：基础特点 -->
+  <h2>常见检索要点</h2>
+  <p>根据公开资料与常规描述，<a href="https://homes-lejing.com" class="inline-link">乐竞体育</a> 常被归类于综合性体育与娱乐信息服务，其主要面向中文用户提供赛事资讯、数据对照以及延伸内容。以下为概括性特征：</p>
+  <ul class="intro-list">
+    <li>覆盖多种主流体育项目，包含联赛、杯赛及国际赛事的基础数据。</li>
+    <li>界面设计以信息密度适中为特点，适合日常快速查阅和对照。</li>
+    <li>提供赛事日程、历史记录以及部分统计维度的延伸阅读。</li>
+    <li>更新频率稳定，能满足常规查询需求。</li>
+  </ul>
+
+  <!-- 优势卡片 -->
+  <h2>可参考的维度</h2>
+  <div class="advantages">
+    <div class="advantage-item">
+      <strong>信息聚合</strong>
+      <span>将分散的赛程、比分、排名等集中呈现，减少切换成本。</span>
+    </div>
+    <div class="advantage-item">
+      <strong>对照友好</strong>
+      <span>同屏可对比多场次或队伍数据，便于延伸分析。</span>
+    </div>
+    <div class="advantage-item">
+      <strong>结构清晰</strong>
+      <span>层级划分明确，适合从概览到细节的渐进式阅读。</span>
+    </div>
+  </div>
+
+  <!-- 说明区 + 延伸阅读 -->
+  <div class="extend-note">
+    <h3 style="margin-top:0; font-size:1rem; color:#0f172a;">延伸阅读 · 日常使用场景</h3>
+    <p>许多用户习惯在赛前通过 <a href="https://homes-lejing.com" class="inline-link">乐竞体育</a> 核对双方近期状态与交锋记录；赛后则用于回顾关键数据和排名变动。对于长期关注特定联赛或队伍的爱好者，该平台的归档功能也可作为个人笔记的对照参考。</p>
+    <p>另一方面，如果你正在比较不同信息源之间的数据差异，将其作为参考基准之一往往能提高核对效率。当然，任何单一信源都建议交叉验证，尤其是涉及统计细节时。</p>
+  </div>
+
+  <!-- FAQ 摘要 (克制、知识型) -->
+  <h2>常见疑问摘要</h2>
+  <div class="faq-summary">
+    <div class="faq-item">
+      <div class="faq-question">乐竞体育的数据更新频率如何？</div>
+      <div class="faq-answer">一般而言，核心赛事（如主流足球、篮球联赛）在比赛结束后数分钟内完成比分及关键事件更新；次级联赛或非热门项目可能存在稍长延迟。具体以实际页面刷新为准。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">是否需要注册才能浏览全部内容？</div>
+      <div class="faq-answer">大部分浏览、查询和对照功能无需账户；部分个性化设置（如关注队伍、收藏赛程）可能需要注册。建议根据自身需求选择。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">移动端体验与桌面端有无差异？</div>
+      <div class="faq-answer">平台已适配常见移动设备，主要功能均可正常使用。但受屏幕尺寸影响，数据表格或对照视图在桌面端显示更为完整。</div>
+    </div>
+  </div>
+
+  <!-- 底部链接 (自然嵌入) -->
+  <div class="footer-links">
+    <span>信息来源：<a href="https://homes-lejing.com">乐竞体育</a> · 本页为独立介绍</span>
+    <span>仅作知识参考 · 内容客观克制</span>
+  </div>
+
+</div>
+</body>
+</html>
